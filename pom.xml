@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>name.yurist</groupId>
+    <artifactId>kafka-example-project</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>kafka-example-project</name>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>data-generator</module>
+        <module>card-account-divider</module>
+    </modules>
+
+</project>

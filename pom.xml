@@ -12,6 +12,7 @@
     <modules>
         <module>data-generator</module>
         <module>card-account-divider</module>
+        <module>mvc-processor</module>
     </modules>
 
 </project>

@@ -32,5 +32,9 @@ public class AppListener {
                 .forEach(card -> kafkaTemplate.send("cards", card.getNumber(), gson.toJson(card)));
         generatorService.generateAccount(appConfig.getAccountQuantity())
                 .forEach(account -> kafkaTemplate.send("accounts", account.getNumber(), gson.toJson(account)));
+        generatorService.generatePerson(appConfig.getPersonQuantity())
+                .forEach(person -> kafkaTemplate.send("clients", person.getAgreNo(), gson.toJson(person)));
+        generatorService.generateNepc(appConfig.getNepcQuantity(), appConfig.getCardQuantity())
+                .forEach(nepc -> kafkaTemplate.send("nepc", gson.toJson(nepc)));
     }
 }

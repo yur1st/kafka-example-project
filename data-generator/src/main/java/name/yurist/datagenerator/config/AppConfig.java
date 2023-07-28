@@ -11,5 +11,7 @@ public class AppConfig {
 
     private int cardQuantity;
     private int accountQuantity;
+    private int personQuantity;
+    private int nepcQuantity;
 
 }
